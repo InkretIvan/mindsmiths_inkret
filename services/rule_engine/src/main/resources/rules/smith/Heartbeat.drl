@@ -12,3 +12,4 @@ rule "Smith's Heartbeat"
         // logging the info in Terminal
         Log.info("Smith's heartbeat - num agents: " + Agents.getCount());
 end
+
