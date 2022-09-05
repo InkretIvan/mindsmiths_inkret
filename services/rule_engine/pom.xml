@@ -8,8 +8,8 @@
 	<packaging>kjar</packaging>
 	<properties>
 		<maven.compiler.target>17</maven.compiler.target>
-        <maven.compiler.source>17</maven.compiler.source>
-        <drools.version>7.68.0.Final</drools.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<drools.version>7.68.0.Final</drools.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<repositories>
@@ -37,6 +37,11 @@
 			<groupId>com.mindsmiths</groupId>
 			<artifactId>rule-engine</artifactId>
 			<version>4.0.0a19</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mindsmiths</groupId>
+			<artifactId>telegram-adapter-client</artifactId>
+			<version>4.0.0a12</version>
 		</dependency>
 	</dependencies>
 	<build>

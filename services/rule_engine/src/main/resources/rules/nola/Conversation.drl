@@ -1,0 +1,13 @@
+package rules.nola;
+import com.mindsmiths.telegramAdapter.TelegramReceivedMessage;
+import agents.Nola;
+
+
+rule "Handle message"
+    when
+        message: TelegramReceivedMessage() from entry-point "signals"
+        agent: Nola()
+    then
+        agent.sendMessage(message.getText());
+        delete(message);
+end
